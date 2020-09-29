@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+<head>
+    <script>
+
+        function myFunction() {
+        var x = document.getElementById("inc");
+        if (x.style.display === "none") {
+            x.style.display = "inline";
+        } 
+        } 
+
+        var i = 0;
+        function buttonClick() {
+            document.getElementById('inc').value = ++i;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>MANE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <div class="container" style="background-color:#1a1a1a;">
+        <img id="logob" src="/Users/liamgilroy/Desktop/Desktop/Web/Mane/images/MANE_logo_2.png">
+    </div>
+    
+    <!-- MENU -->
+    
+    <div class="container" style="background-color:#1a1a1a;">
+        <nav class="navbar flex-column">
+            <ul class="nav">
+                <li class="nav-item btn-dark">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item btn-dark">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item btn-dark">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="products.html">Shop</a>
+                    <div class="dropdown-menu" style="background-color: black; left: 50%;
+                    right: auto;">
+                   <a class="dropdown-item" href="beard.html" style="color:white;">Beard Trimmers</a>
+                   <a class="dropdown-item" href="clippers.html" style="color:white;">Clippers</a>
+                   <a class="dropdown-item" href="scissors.html" style="color:white;">Scissors</a>
+                    </div>
+                </li>
+                <li class="nav-item btn-dark">
+                    <a class="nav-link disabled" href="#">Contact</a>
+                </li>
+                <br><br>
+            <li class="nav-item btn-dark">
+                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-left:10px;">
+                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg>
+            </li>
+            </ul>
+    
+        </nav>
+    </div>
+    
+    </header>
+
+<body>
+    <br><br><br><br>
+    <div class="container">
+    <h3>Contact Us</h3>
+    <h4>Use the contact form below to get in touch</h4>
+    </div> 
+    <br><br>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="contactemail" style="color: white;">Email address</label>
+                <input type="email" class="form-control" id="contactemail" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Input your email address so we can get back in touch.</small>
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="contactname"style="color: white;">Name</label>
+                    <input type="name" class="form-control" id="contactname">
+                </div>
+                <div class="form-group col-6">
+                    <label for="contactname"style="color: white;">Phone</label>
+                    <input type="phone" class="form-control" id="contactphone">
+                </div>
+            </div>
+            <br>
+            <p>This is about...</p>
+           <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="mane" id="rb1">
+                        <label class="form-check-label" for="rb1" style="color: white;">Beard Trimmers</label>
+            </div>
+
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="mane" id="rb2">
+                <label class="form-check-label" for="rb2" style="color: white;">Clippers</label>
+            </div>
+
+             <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="mane" id="rb3">
+                <label class="form-check-label" for="rb3" style="color: white;">Scissors</label>
+            </div>
+
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="mane" id="rb3">
+                <label class="form-check-label" for="rb3" style="color: white;">Other</label>
+            </div>
+            
+            <br><br>
+
+            <div class="form-group">
+                <label for="contactmessage" style="color: white;">Your Message</label>
+                <textarea class="form-control" id="contactmessage" rows="4"></textarea>
+            </div>
+
+            <br>
+            <button type="submit" class="btn btn-outline-secondary btn-lg">Submit</button>
+
+        </form>
+    </div>
+    <br><br><br><br><br><br>
+</body>
+
+<footer>
+    <div id="foot1">
+        <div>
+            <br>
+            <a style="margin-right:20px; color:white;" href="#">Privacy Policy</a>
+            <a style="margin-right:20px; color:white;" href="#">Terms & Conditions</a>
+            <a style="margin-right:20px; color:white;" href="#">Returns Policy</a>
+        </div>
+    <p>Copyright Liam Gilroy, 2020</p>
+    </div>
+</footer>
+
+
+</html>

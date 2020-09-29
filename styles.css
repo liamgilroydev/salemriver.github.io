@@ -1,0 +1,107 @@
+body
+{
+  background-color:#1a1a1a !important;
+}
+
+p
+{
+ color: white;
+ font-family: 'Open Sans', sans-serif;
+}
+
+h1
+{
+  color: white;
+  font-family: 'Jura', sans-serif;
+}
+
+h2
+{
+  color: white;
+  font-family: 'Jura', sans-serif;
+  font-size: 28px !important;
+}
+
+h3
+{
+  color: white;
+  font-family: 'Jura', sans-serif;
+}
+
+h4
+{
+  color: white;
+  font-family: 'Jura', sans-serif;
+}
+
+h5
+{
+  color: white;
+  font-family: 'Jura', sans-serif;
+  font-size: 22px !important;
+}
+
+#foot1
+{
+    background-color: black;
+    text-align: center;
+    line-height: 40px;
+    color: white; 
+    height: 150px; 
+}
+
+.tales {
+    width: 100%;
+  }
+  .carousel-inner{
+    width:100%;
+    max-height: 500px !important;
+  }
+
+  #logob
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px; 
+    margin-bottom: 20px; 
+    height: 80px; 
+  }
+
+#test
+{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%; 
+}
+
+.nav-link {
+  color: white;
+}
+
+ul.nav a:hover 
+{ 
+  color: #5b5b5b !important;
+}
+
+.btn-dark
+{
+  background-color: #1a1a1a !important;
+}
+
+a:hover
+{
+  color: #4b4b4b !important;
+}
+
+#inc
+{
+  background-color: red;
+  color: white;
+  border-radius: 22px;
+  border: none;
+  width: 20px;
+  height: 20px; 
+  text-align: center;
+  font-size: 10px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MANE</title>
+
+    <script>
+
+        function myFunction() {
+        var x = document.getElementById("inc");
+        if (x.style.display === "none") {
+            x.style.display = "inline";
+        } 
+        } 
+
+        var i = 0;
+        function buttonClick() {
+            document.getElementById('inc').value = ++i;
+        }
+    </script>
+    
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<header>
+<div class="container" style="background-color:#1a1a1a;">
+    <img id="logob" src="/Users/liamgilroy/Desktop/Desktop/Web/Mane/images/MANE_logo_2.png">
+</div>
+
+<!-- MENU -->
+
+<div class="container" style="background-color:#1a1a1a;">
+    <nav class="navbar flex-column">
+        <ul class="nav">
+            <li class="nav-item btn-dark">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item btn-dark">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item btn-dark">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="products.html">Shop</a>
+                <div class="dropdown-menu" style="background-color: black; left: 50%;
+                right: auto;">
+            <a class="dropdown-item disabled" href="beard.html" style="color:white;">Beard Trimmers</a>
+            <a class="dropdown-item" href="clippers.html" style="color:white;">Clippers</a>
+            <a class="dropdown-item" href="scissors.html" style="color:white;">Scissors</a>
+                </div>
+            </li>
+            <li class="nav-item btn-dark">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <br><br>
+            <li class="nav-item btn-dark" href="www.google.com">
+                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-left:10px;">
+                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg>
+                <input type="text" id="inc" value="0" style="display: none;"></input>
+            </li>
+        </ul>
+
+    </nav>
+</div>
+
+
+</header>
+
+<body>
+    <br><br>
+<div class="row" style="margin:40px;">
+    
+    <div class="col-md-6">
+        <img src="https://image.freepik.com/free-photo/barber-shop-equipment-black-background-with-place-text-professional-hairdressing-tools-comb-scissor-clippers-hair-trimmer-isolated_109529-330.jpg" style="width:100%; margin: auto;">
+    </div>
+
+
+    <div class="col-md-6">
+        <h3>Beard Trimmers</h3>
+        <br>
+        <p style="margin-right:5%;"><b>Description:</b> Uniquely crafted to provide a smooth beard trimming experience, these clippers and dedicated to the wizardry that is expert eard trimming.</p>
+        <br>
+        <h3>£28.99</h3>
+        <br><br><br>
+        <button type="button" class="btn btn-outline-secondary btn-lg" style="margin:auto;" onclick="myFunction();buttonClick();">Add to cart</button>
+    </div>
+</div>
+
+
+</body>
+
+
+<footer>
+    <div id="foot1">
+        <div>
+            <br>
+            <a style="margin-right:20px; color:white;" href="#">Privacy Policy</a>
+            <a style="margin-right:20px; color:white;" href="#">Terms & Conditions</a>
+            <a style="margin-right:20px; color:white;" href="#">Returns Policy</a>
+        </div>
+    <p>Copyright Liam Gilroy, 2020</p>
+    </div>
+</footer>
+
+
+
+</html>
