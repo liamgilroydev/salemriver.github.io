@@ -29,17 +29,22 @@
 </head>
 
 <header>
-    <div class="container" style="background-color:#1a1a1a;">
+    <div class="container" style="background-color:#1a1a1a; color:white;">
         <img id="logob" src="https://i.imgur.com/Gg64LjW.png">
+        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="float:right; margin-right:40px;">
+                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg> 
+<input type="text" id="inc" value="0" style="display: none; float:right;"></input>   
     </div>
+
     
     <!-- MENU -->
     
-    <div class="container" style="background-color:#1a1a1a;">
+   <!--<div class="container" style="background-color:#1a1a1a;">
         <nav class="navbar flex-column">
             <ul class="nav">
                 <li class="nav-item btn-dark">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link disabled" href="#">Home</a>
                 </li>
                 <li class="nav-item btn-dark">
                     <a class="nav-link" href="about.html">About</a>
@@ -48,24 +53,69 @@
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="products.html">Shop</a>
                     <div class="dropdown-menu" style="background-color: black; left: 50%;
                     right: auto;">
-                   <a class="dropdown-item" href="beard.html" style="color:white;">Beard Trimmers</a>
-                   <a class="dropdown-item" href="clippers.html" style="color:white;">Clippers</a>
-                   <a class="dropdown-item" href="scissors.html" style="color:white;">Scissors</a>
+                        <a class="dropdown-item" href="beard.html" style="color:white;">Beard Trimmers</a>
+                        <a class="dropdown-item" href="clippers.html" style="color:white;">Clippers</a>
+                        <a class="dropdown-item" href="scissors.html" style="color:white;">Scissors</a>
                     </div>
                 </li>
                 <li class="nav-item btn-dark">
-                    <a class="nav-link disabled" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <br><br>
-            <li class="nav-item btn-dark">
-                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-left:10px;">
-                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                  </svg>
-            </li>
+               <li class="nav-item btn-dark">
+                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-left:10px;">
+                        <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                      </svg>
+                </li>
             </ul>
     
         </nav>
-    </div>
+    </div>-->
+    
+    
+      <!--BURGER-->
+      <nav class="navbar-dark red lighten-1 mb-4" style="margin-left:30px;">
+      
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#"></a>
+      
+        <!-- Collapse button -->
+        <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
+          aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="navbar-toggler-icon"><span></span><span></span><span></span><span></span></div>
+        </button>
+      
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent23">
+      
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto" style="margin-left:20px;">
+            <li class="nav-item btn-dark">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item btn-dark">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item btn-dark">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="products.html">Shop</a>
+                <div class="dropdown-menu" style="background-color: #1a1a1a; left: 50%;
+                right: auto;">
+                    <a class="dropdown-item" href="beard.html" style="color:white;">Beard Trimmers</a>
+                    <a class="dropdown-item" href="clippers.html" style="color:white;">Clippers</a>
+                    <a class="dropdown-item" href="scissors.html" style="color:white;">Scissors</a>
+                </div>
+            </li>
+            <li class="nav-item btn-dark">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <!-- Links -->
+      
+        </div>
+        <!-- Collapsible content -->
+      
+      </nav>
+      <!--/.Navbar-->
     
     </header>
 
